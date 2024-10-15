@@ -16,11 +16,13 @@ void gameplay2() {
 
 int main() {
     char input[9999];
+    while(1) {
     scanf("%s", input);
     if(strcmp(input, "w") == 0)
     gameplay();
     scanf("%s", input);
     if(strcmp(input, "s") == 0)
     gameplay2();
+    }
     return 0;
 }
