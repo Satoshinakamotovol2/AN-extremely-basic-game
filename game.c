@@ -23,6 +23,8 @@ int main() {
     scanf("%s", input);
     if(strcmp(input, "s") == 0)
     gameplay2();
+    if(health<=0)
+    printf("Player dead");
     }
     return 0;
 }
