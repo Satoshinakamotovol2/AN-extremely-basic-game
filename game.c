@@ -15,18 +15,20 @@ void gameplay2() {
 }
 
 int main() {
-    char input[9999];
+    char input[999999];
     while(1) {
+        {
     scanf("%s", input);
     if(strcmp(input, "w") == 0)
     gameplay();
+    if(health<=0)
+    printf("Player dead");
     scanf("%s", input);
     if(strcmp(input, "s") == 0)
     gameplay2();
     if(health<=0)
     printf("Player dead");
+        }
     }
-    return 0;
-}
     return 0;
 }
