@@ -15,19 +15,30 @@ void gameplay2() {
 }
 
 int main() {
-    char input[999999];
+    char input[999];
     while(1) {
         {
     scanf("%s", input);
-    if(strcmp(input, "w") == 0)
+    if(strcmp(input, "w") == 0) {
     gameplay();
-    if(health<=0)
-    printf("Player dead");
-    scanf("%s", input);
-    if(strcmp(input, "s") == 0)
+    }
+    
+    else if(strcmp(input, "s") == 0) {
     gameplay2();
     if(health<=0)
     printf("Player dead");
+    }
+    
+    else if(strcmp(input, "heal") == 0) {
+    health = health+10000;
+    }
+    
+    else if(strcmp(input, "health") == 0) {
+    printf("%f", health);
+    }
+    
+    else if(strcmp(input, "exploit_the_glitch") == 0)
+    health = 1.0/0.0;
         }
     }
     return 0;
