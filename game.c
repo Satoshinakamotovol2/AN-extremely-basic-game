@@ -15,7 +15,7 @@ void gameplay2() {
 }
 
 int main() {
-    char input[999];
+    char input[9999];
     while(1) {
         {
     scanf("%s", input);
